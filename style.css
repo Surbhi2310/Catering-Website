@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --navbar-height: 59px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+#logo{
+    margin: 10px 34px;
+
+}
+#logo img{
+    height: 59px ;
+    margin: 3px 6px;
+
+}
+#navbar ul{
+    display: flex;
+    font-size: 1.3rem;
+    font-family: 'DynaPuff', cursive;
+    
+}
+#navbar::before{
+    content:"";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    top: 0px;
+    left: 0px;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+    
+}
+#navbar ul li a{
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+}
+#home::before{
+    content:"";
+    position: absolute;
+    background: url(image/asparagus.jpg)no-repeat center center/cover;
+    height: 642px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'DynaPuff', cursive;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'DynaPuff', cursive;
+}
+#services{
+    margin: 34px;
+    display: flex;
+    
+}
+#services .box{
+    border:2px solid brown;
+    padding: 34px;
+    margin: 2px 25px;
+    border-radius: 23px;
+    background: rgb(228, 179, 179);
+    margin-bottom: 20px;
+}
+#services .box img{
+    width: 156px;
+    margin: auto;
+    display: block;
+}
+#services .box p{
+   font-family: 'DynaPuff', cursive;
+     
+}
+#client-section{
+    height: 345px;
+    position: relative;
+}
+#client-section::before{
+   content: "";
+   position: absolute;
+   background: url(image/pancakes.jpg)no-repeat center center/cover;
+   width: 100%;
+   height: 345px;
+   z-index: -1;
+   opacity: 0.4;
+
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    padding: 34px;
+}
+#clients img{
+    height: 124px;
+
+}
+#contact{
+    
+    position: relative;
+}
+#contact::before{
+   content: "";
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   z-index: -1;
+   opacity: 0.7;
+   background: url(li/contact\ us.jpg)no-repeat center center/cover; 
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'DynaPuff', cursive; 
+}
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: 'DynaPuff', cursive;
+}
+.h-secondary{
+    font-family: 'DynaPuff', cursive;
+    font-size: 2.3rem;
+    padding: 12px;
+
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    font-size: 1.5rem;
+    margin: 17px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+.center{
+    text-align: center;
+}
